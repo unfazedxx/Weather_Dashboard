@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+   
+    <!-- search bar for user to enter their city  -->
+    <input type="text" id="search-bar" placeholder="Enter city">
+    
+    <!-- button to run JS code  -->
+    <button onclick="getWeatherForecast()">Get Forecast</button>
+
+
+    <!-- save the last searched city as a button which user can click to see last city weather   -->
+    <button id="last-city" onclick="getForecastForLastCity()"></button>
+
+    <!-- show current weather  -->
+    <div  id="current-forecast-container"></div>
+
+    <!-- show 5 day weather forecast    -->
+    <div   id="forecast-container"></div>
+    
+
+   
+
+    <script src="./Assets/index.js"></script>
+</body>
+
+</html>

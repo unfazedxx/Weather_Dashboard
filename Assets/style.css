@@ -1,0 +1,15 @@
+/* Style for the current forecast container */
+
+/* Style for the 5-day forecast containers */
+.forecast-container-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+    background-color: #745096;
+    align-items: right;
+}
