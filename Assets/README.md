@@ -10,4 +10,4 @@ screenshot --
 ![Alt text](image.png)
 
 
-deployed website URL: 
+deployed website URL: https://unfazedxx.github.io/Weather_Dashboard/ 
