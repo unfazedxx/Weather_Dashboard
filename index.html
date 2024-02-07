@@ -7,28 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
-   
     <!-- search bar for user to enter their city  -->
     <input type="text" id="search-bar" placeholder="Enter city">
-    
+
     <!-- button to run JS code  -->
     <button onclick="getWeatherForecast()">Get Forecast</button>
 
-
-    <!-- save the last searched city as a button which user can click to see last city weather   -->
-    <button id="last-city" onclick="getForecastForLastCity()"></button>
+    <!-- section to display the last searched city history -->
+    <div id="search-history-container" class="search-history"></div>
 
     <!-- show current weather  -->
-    <div  id="current-forecast-container"></div>
+    <div id="current-forecast-container" class="forecast-section current-forecast"></div>
 
     <!-- show 5 day weather forecast    -->
-    <div   id="forecast-container"></div>
-    
-
-   
+    <div id="forecast-container" class="forecast-section daily-forecast"></div>
 
     <script src="./Assets/index.js"></script>
 </body>

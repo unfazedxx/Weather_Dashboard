@@ -1,15 +1,76 @@
-/* Style for the current forecast container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-/* Style for the 5-day forecast containers */
-.forecast-container-style {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left *
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: block; /* Ensure the button takes full width */
+    margin: 10px 0; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forecast-section {
+    display: flex;
+    justify-content: center; /* Align items to the left */
     flex-wrap: wrap;
 }
 
 .forecast-card {
-    border: 1px solid #ddd;
-    margin: 20px;
-    padding: 10px;
-    background-color: #745096;
-    align-items: right;
+    flex-basis: calc(50% - 20px); /* 50% width with margin */
+    padding: 20px;
+    margin: 10px; /* Add margin */
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: lightblue;
 }
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.current-forecast {
+color: black;
+}
+
+.daily-forecast {
+    color: darkblue; /* blue for daily forecast */
+    width:auto;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+
